@@ -1,0 +1,21 @@
+{
+  "name": "subspace-test",
+  "version": "1.0.0",
+  "description": "Blog analytics with Express and Lodash",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node server/index.js"
+  },
+  "keywords": [
+    "Subspace",
+    "internship-test",
+    "IDK"
+  ],
+  "author": "Bene-volent ( Raghav : raghvme1@gmail.com )",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21"
+  }
+}
