@@ -35,8 +35,9 @@ async function searchBlog(req, res, next) {
             req.searchData = { "searchResult": lodash.filter(blogs, blog => lodash.includes(blog.title.toLowerCase(), searchKeyword)) }
         }
         catch (error) {
+            
             req.statusCode = 500
-            req.searchData = { "Error": "Internal Server Error. Service may be" }
+            req.searchData = { "Error": "Internal Server Error. Service will be corrected shorty","DevError":error.message }
         }
 
     }

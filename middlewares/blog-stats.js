@@ -38,10 +38,9 @@ const parseBlogStats = async (request, response, next) => {
         request.blogData = analyseBlogData(responseJson.blogs)
     }
     catch (error) {
-        console.log(error)
         // Error can only occur if the api fails.
         request.statusCode = 500
-        request.blogData = { "Error": "Internal Server Error. Service will be corrected shortly" }
+        request.blogData = { "Error": "Internal Server Error. Service will be corrected shortly","DevError":error.message }
     }
     next()
 }
