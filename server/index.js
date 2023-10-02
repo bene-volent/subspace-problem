@@ -28,6 +28,4 @@ app.get("/api/blog-search",searchBlog, async (req, res) => {
   
 })
 
-app.listen(port, () => {
-  console.log(`Listening on the Port : http://localhost:${port}`)
-})
+module.exports = app
