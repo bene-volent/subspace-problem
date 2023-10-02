@@ -1,5 +1,6 @@
 // Main Express App
 const express = require('express')
+require("dotenv").config()
 
 // MiddleWares
 const { parseBlogStats } = require("./middlewares/blog-stats.js")
@@ -7,7 +8,7 @@ const { searchBlog } = require('./middlewares/searchBlog.js')
 
 
 const app = express()
-const port = 3000
+const port = process.env.PORT
 
 
 // Default View
@@ -28,4 +29,4 @@ app.get("/api/blog-search",searchBlog, async (req, res) => {
   
 })
 
-module.exports = app
+app.listen(port)

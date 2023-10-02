@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Blog analytics with Express and Lodash",
   "main": "server/index.js",
+  "engines": {
+    "node":"18.x"
+  },
   "scripts": {
-    "dev": "node server/index.js"
+    "dev": "node index.js",
+    "start":"node index.js" 
   },
   "keywords": [
     "Subspace",

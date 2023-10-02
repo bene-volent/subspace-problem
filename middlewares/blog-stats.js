@@ -1,5 +1,5 @@
 // External Imports
-require("dotenv").config({ path: "server/.env" })
+require("dotenv").config()
 const lodash = require('lodash');
 
 // Constants
