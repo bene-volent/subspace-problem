@@ -48,3 +48,9 @@ npm run dev
 
 5. __Error Handling__:
    - [x] Handle any errors that may occur during the data retrieval, analysis, or search process. If the third-party API is unavailable or returns an error, respond with an appropriate error message.
+
+6. __Curls of API__
+   - curl --request GET \
+  --url https://subspace-problem.vercel.app/api/blog-stats
+   - curl --request GET \
+  --url https://subspace-problem.vercel.app/api/blog-search?query=[search-query]
